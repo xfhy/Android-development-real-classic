@@ -1,0 +1,40 @@
+<!-- 第一个页面(主界面)需要使用LinearLayout -->
+<!-- LinearLayout需要方向android:orientation="vertical" -->
+<!-- 附加:背景为护眼色 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#caeace"
+    >
+
+    <!-- 使用帧布局,第一个按钮 -->
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="使用FrameLayout" />
+    
+    <!-- 使用相对布局,第二个按钮 -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="使用RelativeLayout" />
+    
+    <!-- 使用线性布局和相对布局,第三个按钮 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="使用LinearLayout和RelativeLayout" />
+    
+    <!-- 使用表格布局,第四个按钮 -->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="使用TableLayout" />
+</LinearLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xfhy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- 这是主界面的avtivity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 这是FrameLayout布局的activity布局 -->
+        <activity
+            android:name=".Activityfream"
+            android:label="@string/frame_name"
+            > 
+        </activity>
+        
+        <activity 
+            android:name=".ActivityRelative"
+            android:label="@string/relative_name"
+            ></activity>
+        
+        <activity 
+            android:name=".Activity_linerela"
+            android:label="@string/lire_name"
+            ></activity>
+        
+        <activity 
+            android:name=".Activity_Table"
+            android:label="@string/table_name"
+            ></activity>
+    </application>
+
+</manifest>

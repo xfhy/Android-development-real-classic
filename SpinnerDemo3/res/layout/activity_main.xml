@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.spinnerdemo3.MainActivity" >
+
+    <!-- Ps1：小技巧：Ctrl+Shift+F：格式化，若想要对特定的部分代码进行格式化即选择即可，
+    若想对当前页面代码全部进行格式化直接Ctrl+Shift+F（无需全部选中）。搜狗输入法占用了这个热键 -->
+    <!-- 单行,如果太长则会滚动 -->
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:ellipsize="marquee"
+        android:text="请选择您想去的城市:"
+        />
+    <Spinner 
+        android:id="@+id/spin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          />
+
+</LinearLayout>

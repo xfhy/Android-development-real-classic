@@ -1,0 +1,68 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xfhy.login.MainActivity" >
+
+    <TableRow>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名:"
+            android:textSize="10pt"
+        />
+        <EditText 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入登录账号"
+            android:textSize="10pt"
+        />
+    </TableRow>
+    <TableRow>
+	    <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="密码:"
+	            android:textSize="10pt"
+	    />
+	    <EditText 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:password="true"
+	        android:textSize="10pt"
+	        />
+    </TableRow>
+    
+    <TableRow>
+        <!-- 只能接受电话号码 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话号码:" 
+        android:textSize="10pt"
+        />
+    <EditText 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请填写手机号码"
+        android:phoneNumber="true"
+        android:textSize="10pt"
+        />
+    </TableRow>
+    
+     <Button 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="注册"
+         />
+     <Button 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="已有账号,去登录"
+         />
+
+</TableLayout>

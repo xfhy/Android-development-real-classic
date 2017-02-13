@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱好调查</string>
+    <string name="hello_world">年轻人,你喜欢哪些运动?</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 要想实现数据的显示,首先需要定义一个ListView数据的显示模板 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- 表格布局,且只定义了一个表格行,即此表格行上的显示组件将成为以后ListView每行显示的数据格式 -->
+    <TableRow >
+        <!-- 组件显示图片 -->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/file_icon"/>     
+            
+        <!-- 定义文本显示组件     文字大小是15像素,显示内容是垂直居中 -->
+        <TextView 
+            android:id="@+id/_id"
+            android:textSize="20px"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <!-- 定义文本显示组件 -->
+        <TextView 
+            android:id="@+id/name"
+            android:textSize="30px"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+
+</TableLayout>

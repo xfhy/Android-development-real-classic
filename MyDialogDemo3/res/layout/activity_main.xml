@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mydialogdemo3.MainActivity" >
+
+    <TextView
+        android:id="@+id/mych"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择一种水果" />
+    
+    <Button 
+        android:id="@+id/mybut"
+        android:text="选择水果"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

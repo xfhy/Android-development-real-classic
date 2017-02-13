@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xfhy.radiobuttondemo1.MainActivity" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请使用要使用的文字编码" />
+    
+    <!-- RadioGroup是用来放置RadioButton单选按钮的组件,方向是垂直的,默认选中gbk编码 -->
+    <RadioGroup 
+        android:id="@+id/encoding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checkedButton="@+id/gbk">
+        
+        <RadioButton 
+            android:id="@+id/utf"
+            android:text="UTF编码"
+            />
+        <RadioButton 
+            android:id="@+id/gbk"
+            android:text="GBK编码"
+            />
+    </RadioGroup>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的性别是" />
+    
+     <RadioGroup 
+        android:id="@+id/hehe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/gbk">
+        
+        <RadioButton 
+            android:id="@+id/f"
+            android:text="UTF编码"
+            />
+        <RadioButton 
+            android:id="@+id/m"
+            android:text="GBK编码"
+            />
+    </RadioGroup>
+
+</LinearLayout>

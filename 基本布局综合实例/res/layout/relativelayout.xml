@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+     >
+    <TextView 
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名:"
+        />
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label"
+        />
+    <TextView 
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="密码:"
+        android:layout_below="@id/ed_name"
+        />
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/password"
+        />
+    
+    <!-- 取消按钮,左边距为10 -->
+    <Button 
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/ed_password"
+        />
+    <Button 
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_below="@id/ed_password"
+        android:layout_toLeftOf="@id/cancel"
+        />
+</RelativeLayout>

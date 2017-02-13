@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xfhy.MainActivity" 
+    android:orientation="vertical"
+    >
+
+    <!--有背景,字体风格,文字大小,文字外观,文本对齐方式  -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:id="@+id/txetview"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:background="@android:drawable/title_bar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:text="@string/hello_world" />
+    
+    <RadioGroup 
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <!-- 单选按钮,左边距30 -->
+        <!-- RadioButton里面的属性android:button="@null"去掉前面的圆点 -->
+        <!--  -->
+        <RadioButton 
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:textSize="20dip"
+            android:paddingLeft="30dip"
+            android:text="Android新手"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            />
+        
+        <!-- 单选按钮中间的空隙那里,设置一下,美观 -->
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider"
+            />
+        
+        <RadioButton 
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:textSize="20dip"
+            android:paddingLeft="30dip"
+            android:text="Android高手"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            />
+       </RadioGroup>
+
+</LinearLayout>

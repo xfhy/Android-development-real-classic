@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 帧布局 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- 下面的代码使用了FrameLayout布局,并向该布局容器中添加了7个TextView,高度完全相同,宽度 -->
+    <!-- 逐渐减少,颜色渐变 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="210dip"
+        android:height="50dip"
+        android:background="#ff8080"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="180dip"
+        android:height="50dip"
+        android:background="#ffff80"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dip"
+        android:height="50dip"
+        android:background="#80ff80"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dip"
+        android:height="50dip"
+        android:background="#00ff80"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="90dip"
+        android:height="50dip"
+        android:background="#80ffff"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="60dip"
+        android:height="50dip"
+        android:background="#0080ff"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="30dip"
+        android:height="50dip"
+        android:background="#ff80c0"
+        />
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.listview.MainActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/listLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <!-- 
+        android:drawSelectorOnTop="true" 点击某一条记录，颜色会显示在最上面，
+                        记录上的文字被遮住，所以点击文字不放，文字就看不到
+        android:drawSelectorOnTop="false"点击某条记录不放，
+                        颜色会在记录的后面，成为背景色，但是记录内容的文字是可见的
+         目的设置滚动条显示，有以下设置none（隐藏），horizontal（水平），vertical（垂直），
+         并不是所有的view设置就有效果， LinearLayout 设置也没有效果，
+          要想在超过一屏时拖动效果，在最外层加上ScrollView 到eoeAndroid网站查看
+         -->
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="vertical" >
+            
+        </ListView>
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 	
+    android:background="@drawable/background"
+    tools:context="com.xfhy.note.SelectAct" >
+
+    <!-- 放置图片,并且刚开始时不可见 -->
+    <!-- alt+方向键  移动一行数据 -->
+    <ImageView 
+        android:id="@+id/s_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        />
+    
+    <!-- 承载视频 -->
+    <VideoView 
+        android:id="@+id/s_video"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        />
+    
+    <!-- 显示文字,权重为1,充满全屏 -->
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_tv"
+        android:layout_weight="1"
+        />
+
+    <!-- 摆放2个按钮,删除和返回 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/s_delete" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:layout_weight="1"
+            />
+        
+        <Button
+            android:id="@+id/s_back" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RadioTest</string>
+    <string name="hello_world">欢迎使用本注册软件</string>
+    <string name="action_settings">Settings</string>
+    <string name="sex">请选择你的性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="swim">游泳</string>
+    <string name="run">跑步</string>
+    <string name="read">阅读</string>
+    
+
+</resources>

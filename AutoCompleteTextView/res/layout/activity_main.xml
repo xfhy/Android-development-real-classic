@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xfhy.autocompletetextview.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="country" />
+    
+    <!-- 默认是输入2个字符就开始匹配 -->
+    <AutoCompleteTextView
+        android:completionThreshold="2"
+        android:id="@+id/atv1"
+        android:hint="请输入你要搜索的关键词"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+    </AutoCompleteTextView>
+    
+    <MultiAutoCompleteTextView 
+        android:completionThreshold="2"
+        android:id="@+id/matv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你要搜索的关键词(以逗号隔开)">
+        
+    </MultiAutoCompleteTextView>
+
+</LinearLayout>

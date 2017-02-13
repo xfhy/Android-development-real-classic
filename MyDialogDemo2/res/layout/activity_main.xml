@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xfhy.mydialogdemo2.MainActivity" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击下面的按钮退出" 
+        android:layout_centerInParent="true"/>
+
+    <!-- 图片按钮,将背景颜色设置为白色,就看不出来是图片按钮了,而是给用户图片的效果 -->
+    <ImageButton
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:src="@drawable/exit" />
+
+</RelativeLayout>

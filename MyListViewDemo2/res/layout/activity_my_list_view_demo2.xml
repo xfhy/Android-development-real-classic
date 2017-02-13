@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.xfhy.mylistviewdemo2.MyListViewDemo2" >
+
+    <!-- 文本显示组件,居中显示 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="潇风寒月666-国服第一德玛" 
+        android:textSize="40px"
+        android:gravity="center_horizontal"/>
+    
+    <!-- 在本布局管理器中定义了一个ListView组件,而此组件的显示内容将通过Activity程序进行控制 -->
+    <!-- 定义ListView组件 -->
+    <ListView 
+        android:id="@+id/datalist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#99FFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xfhy.flashlight.MainActivity" >
+
+    <TextView
+        android:id="@+id/text" 
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用潇风寒月自制手电筒" />
+
+    <ImageButton 
+        android:id="@+id/open2"
+        android:layout_centerInParent="true"
+        android:src="@drawable/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

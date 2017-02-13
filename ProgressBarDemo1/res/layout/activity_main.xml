@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xfhy.progressbardemo.MainActivity" >
+
+    <!-- 大的 -->
+    <ProgressBar 
+        android:id="@+id/progBar_big"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <!-- 中,不去设置则为中等大小 -->
+    <ProgressBar 
+        android:id="@+id/progBar_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <!-- 小 -->
+    <ProgressBar 
+        android:id="@+id/progBar_small"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <!-- 直线 -->
+    <ProgressBar 
+        android:id="@+id/progBar_zhi"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+
+</LinearLayout>

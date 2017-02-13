@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.xfhy.mylistviewdemo3.MainActivity" >
+
+    <!-- 列表标题,居中显示,这里需要center_horizontal才能居中显示,center_vertical不行 -->
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="潇风寒月666"
+        android:textSize="40px"
+        android:gravity="center_horizontal"
+         />
+
+    <ListView 
+        android:id="@+id/datalist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/> 
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xfhy.textview.MainActivity" 
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="普通disco" />
+    
+    <!-- 编辑框,默认显示的是"这是一个编辑框" -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="这是一个编辑框"
+        />
+    
+    <!-- 设置一个文本框为密码框,以代替字符 -->
+    <!-- 不可编辑 -->
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:password="true"
+        />
+ 
+    <!-- 设置一个文本框为密码框,以代替字符 -->
+    <!-- 可编辑 -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:password="true"
+        />
+    
+    <!-- 普通文本,设置字体大小为25pt,设置字体颜色为红色 -->
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Android强大"
+        android:textSize="25pt"
+        android:textColor="#FF0000"
+        />
+    
+    <!-- 编辑框,只能接受电话号码(实地考察发现:数字能超过11位,可以输入空格) -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:phoneNumber="true"
+        />
+    
+    <!-- 编辑框,默认是占2行(可以输入超过2行的数据) -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        />
+</LinearLayout>

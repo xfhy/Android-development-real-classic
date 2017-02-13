@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xfhy.l008intents"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 包名+ .intent.action.+自定义的名字-->
+        <activity 
+            android:name="com.xfhy.l008intents.Aty1"
+            android:label="Aty1">
+            <intent-filter >
+                <action android:name="com.xfhy.l008intents.intent.action.Aty1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity 
+           android:name="ImageViewer" >
+            
+            <intent-filter >
+                <!-- 设置打开的方式 -->
+                <action android:name="android.intent.action.VIEW"/>
+                <!-- 默认 -->
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!-- 类型是iamge,scheme:文件(打开的是本机文件) -->
+                <data android:mimeType="image/*" android:scheme="file"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

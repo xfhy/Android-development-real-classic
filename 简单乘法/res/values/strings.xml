@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">简单乘法</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">MainActivity</string>
+    <string name="mul">乘以</string>
+    <string name="to">计算</string>
+
+</resources>

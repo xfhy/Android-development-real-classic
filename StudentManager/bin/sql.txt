@@ -1,0 +1,41 @@
+create database StudMan;
+
+create table student   /*学生表*/
+(
+   id varchar(8) not null,            /*学号*/
+   sname varchar(20) not null,        /*姓名*/
+   passwrd varchar(16) not null,      /*密码,password是关键字*/ 
+   sex varchar(2) not null,           --性别
+   haddress varchar(20),              --住址
+   phone varchar(16),                 --电话
+   dorm varchar(16),                  --宿舍
+   result float,                     --成绩
+   primary key(id)                    --学号是主键
+);
+
+
+create table teacher   --老师的表
+(
+   id varchar(8) not null,            --老师编号
+   passwrd varchar(16) not null,      --密码
+   primary key(id)                    --主键是编号
+);
+
+/*
+SQL Server没有double类型，若是你需要用双精度数据，如果不固定小数位，用float就可以了;
+若是固定小数位，可以用numric;如果整数和小数都出现，可以用real
+*/
+
+insert into student values('20001','小强','qiang','男','江苏徐州','15228467548','101',23);
+insert into student values('20002','小位','qiang','男','泸州','15328467548','105',78.23);
+insert into student values('20003','小童','qiang','女','西安','15428467548','101',45.45);
+insert into student values('20004','大的','qiang','女','矫正','15528467548','205',78.45);
+insert into student values('20005','呵呵','qiang','女','刀片','15628467548','601',45.78);
+insert into student values('20006','哈哈','qiang','男','的骄傲看','15728467548','305',78.45);
+insert into student values('20007','安安','qiang','男','云岚','15828467548','423',42.36);
+insert into student values('20008','语言','qiang','女','贵阳','15928467548','401',75.42);
+insert into student values('20009','看看','qiang','女','成都','15728467548','546',75.46);
+insert into student values('200010','哦哦','qiang','男','厦门','15245467548','608',99.99);
+
+insert into teacher values('10001','admin');
+insert into teacher values('10002','manager');

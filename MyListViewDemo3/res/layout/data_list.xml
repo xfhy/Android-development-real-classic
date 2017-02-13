@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ListView项的布局管理器 -->
+<!-- 水平摆放 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <!-- 图片,   间距为3像素 -->
+    <ImageView 
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3px"
+        />
+
+    <!-- 标题及作者信息,所有组件靠左对齐-->
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+        
+        <!-- 标题 -->
+        <TextView 
+            android:id="@+id/goods"
+            android:padding="3px"
+            android:textSize="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <!-- 作者信息 -->
+        <TextView 
+            android:id="@+id/author"
+            android:padding="3px"
+            android:textSize="15px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    <!-- 靠右对齐 -->
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        >
+        
+        <!-- 文本组件,显示是否收费 -->
+        <TextView 
+            android:id="@+id/price"
+            android:padding="3px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <!-- 图片,评分信息 -->
+        <ImageView 
+            android:id="@+id/score"
+            android:padding="3px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+</LinearLayout>
